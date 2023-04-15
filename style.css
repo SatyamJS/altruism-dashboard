@@ -1,0 +1,275 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+i{
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.navbar{
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    align-items: center;
+    top:0px;
+    right:0px;
+    color:gray;
+    z-index: 99;
+}
+.inactive{
+    background-color: rgba(0,0, 0, 0.2);
+    padding: 5px;
+    margin: 0px;
+    color:black;
+    border-radius: 5px;
+}
+.navbar img{
+    width:40px;
+    height:40px;
+    margin:0px 10px;
+    border-radius: 50%;
+    border:1px solid blueviolet;
+}
+.adminInfo{
+    margin:0px 10px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+.adminInfo span:nth-child(2){
+    font-size: 10px;
+    text-align: right;
+    margin-top: 5px;
+}
+.active{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: blueviolet;
+}
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    /* border:1px solid black; */
+}
+.navlinks{
+    display: flex;
+    padding: 20px;
+    width: 200px;
+    flex-direction: column;
+    /* outline: 1px solid blue; */
+}
+.logo{
+    width: 10vw;
+}
+.logo img{
+    max-width: 100%;
+}
+.links{
+    width:100%;
+    padding:12px 10px;
+    color:grey;
+    font-size: 0.7rem;
+    border-left:5px solid transparent;
+    transition: all 0.3s;
+}
+.links:hover{
+    border-left:5px solid blueviolet;
+    color:blueviolet;
+    background-color: rgba(0,0, 0, 0.1);
+}
+.firstLink{
+    margin-top: 5vh;
+}
+.logout{
+    position: relative;
+    margin-top: 10vh;
+}
+
+
+.main{
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    /* border:1px solid green; */
+    padding: 20px;
+    gap: 10px;
+
+}
+.main h1{
+    font-size: 28px;
+    font-weight: bolder;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color:blue; */
+}
+.card{
+    display: flex;
+    max-width: 250px;
+    /* border:1px solid red; */
+    padding: 20px;
+    padding-bottom: 5px;
+    margin:10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px rgba(0,0, 0, 0.3);
+}
+input[type=date]{
+    border:none;
+    outline: none;
+    background-color:rgba(0,0, 0, 0.3);
+    color:white;
+    padding: 5px;
+    width:150px;
+
+}
+.cardDetails span{
+    position: relative;
+    background-color: blueviolet;
+    color:white;
+    padding: 10px 5px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.cardDetails h3{
+    margin:15px 0px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.cardDetails p{
+    color:gray;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.cardProgress{
+    position: relative;
+    padding: 20px;
+}
+.outer{
+    width:100px;
+    height: 100px;
+    /* background-color: rgba(0,0, 0, 0.1); */
+    border-radius: 50%;
+    padding: 10px;
+}
+.inner{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+svg{
+    position: absolute;
+    top:20px;
+    left:20px;
+    fill:none;
+    transform: scale(1);
+    stroke: blueviolet;
+    stroke-width: 15px;
+    stroke-dasharray: 257;
+    stroke-linecap: round;
+}
+.detailTable{
+    margin:10px 0px;
+    max-width: 1000px;
+    box-shadow: 1px 1px 30px rgba(0,0, 0, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+}
+.products th{
+    max-width:180px;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.products td{
+    text-align: center;
+    font-size: 11px;
+    max-width: 150px;
+    /* background-color: orchid; */
+    padding: 10px 30px;
+    border-collapse: collapse;
+    margin-left: 0px;
+    border-bottom:1px solid rgba(0,0, 0, 0.1);
+    color:gray;
+}
+.sidecontent{
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    position: relative;
+    padding-top:70px;
+}
+.updates{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    box-shadow: 1px 1px 30px rgba(0,0, 0, 0.3);
+    border-radius: 20px;
+    max-width: 280px;
+}
+.updates div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:gray;
+    font-size: 13px;
+}
+.updates div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin:10px;
+}
+.updates div div{
+    display: flex;
+    flex-direction: column;
+}
+.updates + h3{
+    margin: 15px;
+}
+.analyticDiv{
+    display: flex;
+    padding: 10px;
+    font-size: 12px;
+    gap: 20px;
+    box-shadow: 1px 1px 30px rgba(0,0, 0, 0.3);
+    border-radius: 10px;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.anaIcon{
+    background-color: blueviolet;
+    border-radius: 50%;
+    color:white;
+    padding:5px 5px 12px 12px;
+    font-size: 16px;
+}
+.addproducts{
+    border:1.5px dashed blueviolet;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    color: blueviolet;
+    font-weight: bold;
+    margin-top: 15px;
+}
