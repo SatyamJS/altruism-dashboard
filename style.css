@@ -4,6 +4,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
+    user-select: none;
+    /* outline:1px solid red; */
 }
 i{
     margin-right: 10px;
@@ -17,8 +19,47 @@ i{
     align-items: center;
     top:0px;
     right:0px;
-    color:gray;
+    /* color:gray; */
     z-index: 99;
+}
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 10px;
+    margin-right:10px;
+    visibility: hidden;
+}
+.hamburger span{
+    width:25px;
+    border:1px solid rgba(0,0, 0, 0.3);
+    height:3px;
+    background-color: white;
+}
+.hamburgerActive span:nth-child(2){
+    display: none;
+}
+.hamburgerActive span:nth-child(1){
+    transform: rotate(-45deg);
+    width:25px;
+    border:1px solid rgba(0,0, 0, 0.3);
+    height:3px;
+    background-color: white;
+}
+.hamburgerActive{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 10px;
+    margin-right:10px;
+    transition: all 0.5s;
+}
+.hamburgerActive span:nth-child(3){
+    width:25px;
+    border:1px solid rgba(0,0, 0, 0.3);
+    height:3px;
+    background-color: white;
+    transform:rotate(45deg) translate(-5px ,-5px)
 }
 .inactive{
     background-color: rgba(0,0, 0, 0.2);
@@ -54,6 +95,8 @@ i{
 .mainContainer{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     /* border:1px solid black; */
 }
 .navlinks{
@@ -62,6 +105,14 @@ i{
     width: 200px;
     flex-direction: column;
     /* outline: 1px solid blue; */
+}
+.navlinksclose{
+    display: flex;
+    padding: 20px;
+    width: 200px;
+    flex-direction: column;
+    display: none;
+
 }
 .logo{
     width: 10vw;
@@ -93,7 +144,7 @@ i{
 
 .main{
     display: flex;
-    max-width: 1000px;
+    max-width: 90vw;
     flex-direction: column;
     /* border:1px solid green; */
     padding: 20px;
@@ -272,4 +323,52 @@ table{
     color: blueviolet;
     font-weight: bold;
     margin-top: 5px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .navlinks{
+        width: 100vw;
+        text-align: center;
+        display: none;
+    }
+    .navlinksclose{
+        width: 100vw;
+        text-align: center;
+        display: flex;
+    }
+    .firstLink{
+        margin-top: 20px;
+    }
+    .logout{
+        position: relative;
+        margin-top: 5px;
+    }
+    .mainContainer{
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        margin-top: 7vh;
+        width: 100vw;
+    }
+    table{
+        display: flex;
+
+    }
+    .products td{
+        padding: 5px;
+    }
+    .products th{
+        padding: 5px;
+
+    }
+    .details{
+        position: relative;
+        align-self: flex-start;
+    }
+    .hamburger{
+        visibility: visible;
+    }
+  
 }

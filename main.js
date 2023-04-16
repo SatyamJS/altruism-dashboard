@@ -17,6 +17,8 @@ const details = document.querySelector(".detailTable")
 const body= document.getElementsByTagName("body")[0]
 const lightBtn= document.querySelector(".active")
 const darkBtn= document.querySelector(".inactive")
+const navlinks =document.querySelector(".navlinks")
+const hamburger= document.querySelector(".hamburger")
 lightBtn.addEventListener("click",(e)=>{
     darkBtn.style.background="rgba(0,0,0,0.2)"
     darkBtn.style.color="black"
@@ -78,4 +80,8 @@ darkBtn.addEventListener("click",(e)=>{
     })
     details.style.backgroundColor="#261C2C"
     updates.style.backgroundColor="#261C2C"
+})
+hamburger.addEventListener("click",(e)=>{
+    hamburger.classList.toggle("hamburgerActive")
+    navlinks.classList.toggle("navlinksclose")
 })
