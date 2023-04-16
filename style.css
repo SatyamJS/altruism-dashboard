@@ -87,7 +87,7 @@ i{
 }
 .logout{
     position: relative;
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 
 
@@ -271,5 +271,5 @@ table{
     text-align: center;
     color: blueviolet;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 5px;
 }
